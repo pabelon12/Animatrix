@@ -61,18 +61,23 @@ public class Logica_Player : MonoBehaviour
                     correrveloz = veloInicial;
                 }
 
-                animar.SetBool("Suelo", true);
             }
-            else
-
-                Cayendo();
+            animar.SetBool("Suelo", true);
         }
+        else
+
+            Cayendo();
     }
 
-        public void Cayendo()
-        {
-            animar.SetBool("Saltar", false);
-            animar.SetBool("Suelo", false);
-        }
+    public void Cayendo()
+    {
+        animar.SetBool("Saltar", false);
+        animar.SetBool("Suelo", false);
     }
+
+
+}
+
+
+
 
